@@ -30,7 +30,7 @@
       z-index: 1000;
       font-weight: 900;
       font-size: 50px;
-      font-family: 'BebasNeue-Regular',sans-serif;
+      font-family: 'Jua', sans-serif;
     }
 
     .container p{
@@ -130,7 +130,7 @@
     .sec01 img{
       width: 320px;
       height: 300px;
-      margin: auto 110px;
+      margin: auto 85px;
       border-radius: 70%;
     }
     
@@ -174,6 +174,7 @@
     }
 
     .graph .html{
+      font-family: 'Jua', sans-serif;
       display: block;
       width: 85%;
       height: 40px;
@@ -188,6 +189,7 @@
     }
 
     .graph .css{
+      font-family: 'Jua', sans-serif;
       display: block;
       width: 80%;
       height: 40px;
@@ -202,6 +204,7 @@
     }
 
     .graph .java{
+      font-family: 'Jua', sans-serif;
       display: block;
       width: 80%;
       height: 40px;
@@ -227,10 +230,7 @@
       margin: 10px;
     }
 
-    .cont2:hover{
-      margin: 10px;
-    }
-
+    
 
     .cont img{
       width: 55%;
@@ -239,10 +239,12 @@
       padding-bottom: 10px;
       margin-left: 10px;
       }
+
     .text{
       float: right;
       text-align: center;
-      /* padding-top: 50px; */
+      padding: 5%;
+      
     }
 
     .sec04{
@@ -306,12 +308,18 @@
 
 
     @media(min-width:768px){
+      .container ul li{
+        color: black;
+      }
 
-      
+      .container .top1, .container .top2{
+        color: black;
+      }
 
       .container h1{
         order: 2;
         text-align: center;
+        color: black;
       }
 
       .container img:nth-child(1){
@@ -324,10 +332,10 @@
 
       .container ul{
         order: 3;
+        color: aqua;
       }
 
     .container h2{
-      font-family: 'Jua', sans-serif;
       left: 40%;
       text-align: center;
       padding-top: 130px;
@@ -339,8 +347,9 @@
     
     }
     .text{
-      padding-left: 110px;
-      padding-top:50px;
+      padding: 10%;
+      font-size: 20px;
+      text-align: center;
     }
     .sec04 h2{ 
       left: 140px;
@@ -363,8 +372,12 @@
 
     .container h1{
       font-size: 70px;
-      top: 25%;
-      left: 37%;
+      top: 30%;
+      left: 35%;
+      color:#fff
+    }
+    .container h1, .container .top1, .container .top2{
+      color:#fff
     }
 
     .container img:nth-child(2){
@@ -377,8 +390,78 @@
     .container ul li{
       margin-left: 50px;
       font-size: 35px;
+      color:#fff
     }
-  }
+    .text{
+      padding: 15%;
+      font-size: 30px;
+    }
+    .sec01{
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 150px;
+    }
+    .sec01 img{
+      width: 480px;
+      height: 480px;
+      margin-top: 1px;
+      margin-right: 17px;
+      
+    }
+
+    .sec01 .txt h2,.sec01 .txt h3,.sec01 .txt p{
+      font-size: 25px;
+      margin-left: 180px;
+      margin-top: 25px;
+    }
+    .sec01 .txt02 h2,.sec01 .txt02 h3,.sec01 .txt02 p{
+      margin-left: 25px;
+      margin-top: 70px;
+
+    }
+    .sec01 .txt01 h2,.sec01 .txt01 h3,.sec01 .txt01 p{
+      margin-left: 15px;
+    } 
+
+    .sec03{
+      display: inline-block;
+    }
+
+    .cont01{
+      position: absolute;
+      width: 45%;
+      left: 3%;
+      height: 45%;
+    }
+
+    .cont02{
+      position: absolute;
+      top: 2560px;
+      right: 3%;
+      width: 45%;
+      height: 45%;
+    }
+
+    .cont03{
+      position: absolute;
+      top: 3050px;
+      left: 3%;
+      width: 45%;
+      height: 45%;
+    }
+
+    .cont04{
+      position: absolute;
+      top: 3050px;
+      right: 3%;
+      width: 45%;
+      height: 45%;
+    }
+    .text{
+      padding-right: 45px;
+    }
+
+}
 
 
 
@@ -460,8 +543,6 @@ $(".scroll_move").click(function(event){
   <div class="wrap">
     <header class="header">
       <div class="container">
-        
-      </h1>
         <ul>
           <li><a href="#div2" id="scroll_move">Profile</a></li>
           <li><a href="#div3" id="scroll_move">Portfolio</a></li>
@@ -489,7 +570,7 @@ $(".scroll_move").click(function(event){
 
     <section class="sec01">
       <img src="./images/selfpic.png.jpg" alt="myprofile">
-      <div class="txt">
+      <div class="txt txt01">
       <h2>이범준</h2>
       <h3>1996.11.30</h3>
       <p>sujinlove96@naver.com</p>
@@ -506,7 +587,8 @@ $(".scroll_move").click(function(event){
         ITQ 파워포인트 자격증
         
         </p>
-         
+         </div>
+         <div class="txt txt02">
         <h3>Personality Type</h3>
         <p>ESFP - 성격유형 <br>
         
@@ -535,56 +617,52 @@ $(".scroll_move").click(function(event){
     </section>
     <section class="sec03">
       <h2>PORTFOLIO</h2>
-      <div class="cont clearfix">
+      <div class="cont cont01 clearfix">
         <img src="./images/port01.PNG " alt="thum1">
         <div class="text">
           <h2>모질라</h2>
-          <h4></h4>
-          <p>07.09~07.11</p>
-          <p>Lorem ipsum dolor sit amet. <br>
-        Lorem, ipsum dolor.</p>
+          <p>06.10~06.20</p>
+          <p>HTML5,CSS,JAVA<br>
+        브라우저 소개 페이지와 <br>다운로드 페이지 제작</p>
         </div>
       </div>
       </div>
-      <div class="cont clearfix">
-        <img src="./images/port01.PNG " alt="thum1">
+      <div class="cont cont02 clearfix">
+        <img src="./images/port02.jpg " alt="thum1">
         <div class="text">
-          <h2>모질라</h2>
-          <h4></h4>
-          <p>07.09~07.11</p>
-          <p>Lorem ipsum dolor sit amet. <br>
-        Lorem, ipsum dolor.</p>
+          <h2>할리스</h2>
+          <p>06.24~06.30</p>
+          <p>HTML5,CSS<br>
+         할리스커피의 모바일<br>페이지 제작</p>
         </div>
       </div>
       </div>
       </div>
       </div>
-      <div class="cont clearfix">
-        <img src="./images/port01.PNG " alt="thum1">
+      <div class="cont cont03 clearfix">
+        <img src="./images/port03.jpg " alt="thum1">
         <div class="text">
-          <h2>모질라</h2>
-          <h4></h4>
-          <p>07.09~07.11</p>
-          <p>Lorem ipsum dolor sit amet. <br>
-        Lorem, ipsum dolor.</p>
+          <h2>여행사</h2>
+          <p>7.1~7.12</p>
+          <p>HTML5,CSS,<br>JAVA,JQUERY<br>
+        투어리즘 여행사 페이지 제작</p>
         </div>
       </div>
       </div>
-      <div class="cont clearfix">
-        <img src="./images/port01.PNG " alt="thum1">
+      <div class="cont cont04 clearfix">
+        <img src="./images/port04.jpg " alt="thum1">
         <div class="text">
-          <h2>모질라</h2>
-          <h4></h4>
-          <p>07.09~07.11</p>
-          <p>Lorem ipsum dolor sit amet. <br>
-        Lorem, ipsum dolor.</p>
+          <h2>메가박스</h2>
+          <p>07.09~07.19</p>
+          <p>HTML5,CSS<br>JAVA,JQUERY<br>
+        메가박스 메인페이지 <br>제작</p>
         </div>
       </div>
       </div>
     </section>
   </div>
 
-  <div id="div4">
+  <!-- <div id="div4">
     <section class="sec04">
       <div class="img">
         <img src="./images/footer.png" alt="circle01">
@@ -593,14 +671,14 @@ $(".scroll_move").click(function(event){
         <a href="#" class="a1">이력서 바로가기</a>
         <a href="#" class="a2">자소서 바로가기</a>
     </section>
-    </div>
-    <footer class="footer">
+    </div> -->
+    <!-- <footer class="footer">
       <address>
         Copyright 2023. Lee Bum Jun. All pictures cannot be <br>
         copied without permission. <br> ※ 해당 포트폴리오에 사용된 일부 이미지들은 <br>
         비영리 비상업적인 목적으로 사용되었습니다.
       </address>
-    </footer>
+    </footer> -->
   </div>
 
 </body>
